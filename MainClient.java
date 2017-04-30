@@ -116,11 +116,11 @@ public class MainClient extends WindowAdapter implements ActionListener
 		Font arialFont= new Font("Arial", Font.PLAIN, 14);
 		Font myFont= new Font("Monotype Corsiva", Font.PLAIN, 18);
 
-		lblName= new MyJLabel("By:-  Pooja, Priya, Pradnya ", myFont, Color.blue, Color.white);
+		lblName= new MyJLabel("", myFont, Color.blue, Color.white);
 
-		lblEmail= new MyJLabel("patilpooja485@gmail.com",arialFont, myColor, Color.white);
+		lblEmail= new MyJLabel("",arialFont, myColor, Color.white);
 
-		lblPhone= new JLabel("8792608122");
+		lblPhone= new JLabel("");
 
 		gbc.gridx= 2;	gbc.gridy= 1;	gbl.setConstraints(lblName, gbc);
 		panelAbout.add(lblName);
@@ -199,7 +199,7 @@ public class MainClient extends WindowAdapter implements ActionListener
 
 		gbc.gridy= 3;	gbc.weighty= 2;
 		gbl.setConstraints(panelAbout, gbc);
-		mainPanel.add(panelAbout);
+//		mainPanel.add(panelAbout);
 
 		gbc.gridy= 5;	gbc.weighty= 1;
 		gbl.setConstraints(panelButtons, gbc);

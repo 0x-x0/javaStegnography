@@ -243,7 +243,7 @@ public class EmbedMessageGUI extends JFrame implements ActionListener, ItemListe
 			if(chkEncrypt.isSelected())
 			{
 				password= new String(txtPassword.getPassword());
-				if(password.length()!=8)
+				if(password.length()<8)
 				{
 					JOptionPane.showMessageDialog(this, "Password needs to be a minimum of 8 Characters!", "Invalid password!", JOptionPane.WARNING_MESSAGE);
 					return;
